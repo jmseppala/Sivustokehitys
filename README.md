@@ -1,6 +1,6 @@
 # Sivustokehitys
 HTML, CSS, foundation-framework. 
-Tämä sivusto tuotettiin opinnäytetyönä JAMK:n tietojenkäsittelyn web page development-opintojaksolle kurssimateriaaliksi.
+Tämä sivusto tuotettiin opinnäytetyönä JAMK:n tietojenkäsittelyn web page development-opintojaksolle kurssimateriaaliksi demoten samalla responsiivisen sivun toimintaa.
 
 Sivusto löytyy myös tästä osoitteesta:
 http://tikorasia.jamk.fi/~rwd/foundation-5.0.3
