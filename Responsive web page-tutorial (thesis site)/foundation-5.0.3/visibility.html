@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web design tutorial </title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+  </head>
+  <body>
+  
+  
+<!-- Nav Bar -->
+  
+<nav class="top-bar" data-topbar data-options="is_hover: false"> 
+<ul class="title-area"> 
+<li class="name"> <h1><a href="index.html">RWD tutorial</a></h1> </li> <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --> 
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> 
+</ul> 
+<section class="top-bar-section"> 
+
+<!-- Right Nav Section --> 
+
+
+<ul class="right"> <li class="active"><li> <a href="index.html">Main</a> 
+<ul> 
+</ul> 
+</li> 
+
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">Get started</a> 
+<ul class="dropdown"> 
+<li><a href="http://foundation.zurb.com/">Download Foundation</a></li> 
+<li><a href="instructions.html">Instructions</a></li> 
+<li><a href="http://foundation.zurb.com/docs/">Foundation Documents</a></li> 
+<li><a href="http://foundation.zurb.com/templates.html">Foundation Templates</a></li> 
+</ul> 
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">RWD basics</a> 
+<ul class="dropdown"> 
+<li><a href="what_is_rwd.html">What is RWD?</a></li> 
+<li><a href="html5.html">HTML5</a></li> 
+<li><a href="css3.html">CSS3</a></li> 
+<li><a href="javascript.html">JavaScript</a></li>  
+<li><a href="media_query.html">Media query</a></li> 
+<li><a href="fonts_and_images.html">Relative fonts and responsive images</a></li>
+<li><a href="visibility.html">Visibility</a></li> 
+<li><a href="grid.html">Grid</a></li>
+<li><a href="framework.html">Framework</a></li>
+</ul> 
+
+
+</nav>
+  
+<!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row">
+ 
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+	
+      <article>
+ 
+       <h3><a href="#">Text visibility</a></h3>
+        <p>You can use visibility classes to either show or hide content depending which device or screen size is used.
+		Try to resize the window to see different text shown as the screen size adapts.
+		You can either show or hide for example set class to show-for-small-only or hide-for-small-only. 
+		This example below uses show-for-device type code. You can also set oriental detection, touch decetion and
+		accessibility.
+		The code can be found on Foundation documents.
+		 <a href="http://foundation.zurb.com/docs/components/visibility.html">Visibility Classes.</a>  <br />
+		</p>
+		
+      </article>
+	  
+	 <div>
+	 
+	 <p class="panel"> 
+	 <strong class="show-for-small-only">This text is shown only on a small screen.</strong> 
+	 <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong> 
+	 <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong> 
+	 <strong class="show-for-large-up">This text is shown on large screens and up.</strong> 
+	 <strong class="show-for-large-only">This text is shown only on a large screen.</strong> 
+	 <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong> 
+	 <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong> 
+	 <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong> </p>
+	 
+	 </div>
+	  
+	 <article>
+ 
+       <h3><a href="#">Image visibility</a></h3>
+        <p>You can also use the same code for another content such as images. To hide the image below for small devices only
+		I just put the image inside div and set div class instead of p class as in the text example above. 
+		<strong>Try to resize the browser window to minimum size to see the image disappear. </strong> 
+		For responsive web design the ability to manage visibility is
+		really convenient because you can make loading times faster for smaller devices if you hide some of the content. 
+		Take a look at the <a href="http://foundation.zurb.com/docs/components/visibility.html">Visibility Classes</a> document
+		and add some code to your Foundation index.html to begin experimenting with different visibility possibilities.
+		There is no need to modify css. Just add classes in the HTML page and Foundation takes care of the actual work
+		of hiding or showing content depending on which code is used.
+		</p>
+		
+     </article>
+	 
+	<div class="hide-for-small-only"><strong>You are <em>not</em> on a small screen.</strong> 
+
+	  <img src="img/maisema.jpg" />
+	
+	</div>
+      
+	  <hr />
+ 
+    </div>
+ 
+    <!-- End Main Content -->
+ 
+ 
+  </div>
+ 
+  <!-- End Main Content and Sidebar -->
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+    
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Jari-Matti Seppälä</p>
+        </div>
+        <div class="large-6 columns">
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    $(document).foundation();
+  </script>
+    
+  </body>
+</html>

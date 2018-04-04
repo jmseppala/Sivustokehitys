@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web design tutorial </title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+  </head>
+  <body>
+  
+  
+<!-- Nav Bar -->
+  
+<nav class="top-bar" data-topbar data-options="is_hover: false"> 
+<ul class="title-area"> 
+<li class="name"> <h1><a href="index.html">RWD tutorial</a></h1> </li> <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --> 
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> 
+</ul> 
+<section class="top-bar-section"> 
+
+<!-- Right Nav Section --> 
+
+
+<ul class="right"> <li class="active"><li> <a href="index.html">Main</a> 
+<ul> 
+</ul> 
+</li> 
+
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">Get started</a> 
+<ul class="dropdown"> 
+<li><a href="http://foundation.zurb.com/">Download Foundation</a></li> 
+<li><a href="instructions.html">Instructions</a></li> 
+<li><a href="http://foundation.zurb.com/docs/">Foundation Documents</a></li> 
+<li><a href="http://foundation.zurb.com/templates.html">Foundation Templates</a></li> 
+</ul> 
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">RWD basics</a> 
+<ul class="dropdown"> 
+<li><a href="what_is_rwd.html">What is RWD?</a></li> 
+<li><a href="html5.html">HTML5</a></li> 
+<li><a href="css3.html">CSS3</a></li> 
+<li><a href="javascript.html">JavaScript</a></li> 
+<li><a href="media_query.html">Media query</a></li> 
+<li><a href="fonts_and_images.html">Relative fonts and responsive images</a></li>
+<li><a href="visibility.html">Visibility</a></li> 
+<li><a href="grid.html">Grid</a></li>
+<li><a href="framework.html">Framework</a></li>
+</ul> 
+
+</ul> 
+
+</nav>
+  
+<!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row">
+ 
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+ 
+      <article>
+	  
+	    <h3><a href="#">CSS3</a></h3>
+         
+		 <p>
+	      CSS3 is the latest version of the Cascading Style Sheets language. 
+		  The biggest difference between CSS2 and CSS3 is probably the separation of modules. 
+		  CSS3 is divided into several documents which are called modules. 
+		  Every single module has new capabilities, without hurting the compatibility of the previous stable release.
+		  Although there are more that 50 modules the 4 most important ones are media queries, namespaces, selectors level 3 and color.
+		  You can find more information about media queries on this tutorial site. Just choose media queries under the RWD basics link.
+		  For more information about CSS3 in general just click the links below.
+		  CSS3 is used with HTML5 markup language. A reference to CSS3-file from the HTML5-document is made just like before with older HTML and CSS-versions.
+		  For example <strong> < link rel="stylesheet" href="css/foundation.css" /> </strong>. Just delete the space after the first arrow. I added the space here 
+		  to not confuse this HTML-document with the second css reference.
+		 </p>
+		 
+		 <a href="http://www.1stwebdesigner.com/css/css3-introduction/">CSS3 Introduction</a> <br />  
+		 <a href="http://css3generator.com/">CSS3 Generator</a> <br />  
+		
+	 </article>  
+ 
+      <hr />
+ 
+    </div>
+ 
+    <!-- End Main Content -->
+ 
+ 
+  </div>
+ 
+  <!-- End Main Content and Sidebar -->
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Jari-Matti Seppälä</p>
+        </div>
+        <div class="large-6 columns">
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    $(document).foundation();
+  </script>
+    
+  </body>
+</html>

@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web design tutorial </title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+  </head>
+  <body>
+  
+  
+<!-- Nav Bar -->
+  
+<nav class="top-bar" data-topbar data-options="is_hover: false"> 
+<ul class="title-area"> 
+<li class="name"> <h1><a href="index.html">RWD tutorial</a></h1> </li> <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --> 
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> 
+</ul> 
+<section class="top-bar-section"> 
+
+<!-- Right Nav Section --> 
+
+
+<ul class="right"> <li class="active"><li> <a href="index.html">Main</a> 
+<ul> 
+</ul> 
+</li> 
+
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">Get started</a> 
+<ul class="dropdown"> 
+<li><a href="http://foundation.zurb.com/">Download Foundation</a></li> 
+<li><a href="instructions.html">Instructions</a></li> 
+<li><a href="http://foundation.zurb.com/docs/">Foundation Documents</a></li>
+<li><a href="http://foundation.zurb.com/templates.html">Foundation Templates</a></li>  
+</ul> 
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">RWD basics</a> 
+<ul class="dropdown"> 
+<li><a href="what_is_rwd.html">What is RWD?</a></li> 
+<li><a href="html5.html">HTML5</a></li> 
+<li><a href="css3.html">CSS3</a></li>  
+<li><a href="javascript.html">JavaScript</a></li> 
+<li><a href="media_query.html">Media query</a></li>
+<li><a href="fonts_and_images.html">Relative fonts and responsive images</a></li>
+<li><a href="visibility.html">Visibility</a></li>  
+<li><a href="grid">Grid</a></li>
+<li><a href="framework.html">Framework</a></li>
+</ul> 
+
+</ul> 
+
+</nav>
+  
+<!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row">
+ 
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+ 
+      <article>
+ 
+       <h3><a href="#">Media query</a></h3>
+        <p>Media query is a really important if not the most important part of responsive web design. 
+		Media queries are used for adapting the site to different screen resolutions such as smartphone vs. high definition screen.
+		A media query consists of a media type and one or more expressions which involve media features. Those features then resolve to either true or false. 
+		So in other words what the media query does is: it allows certain conditions to be applied to different stylesheets to make websites fluid and fit all kinds of screen sizes.
+		The result of the query is true if the media type specified in the media query matches the type of device the document is being displayed on. 
+		Also all expressions in the media query need to be true. 
+		When a media query is true, the corresponding style sheet or rules are applied, following the normal cascading rules.</p>
+		
+		  <h3><a href="#">Layout changes with media queries</a></h3>
+		
+		<p>
+		One of the most important things about responsive web design is the layout changes that occur when resizing the browser window or browsing the
+		site on different devices. For example the number of the columns used may became smaller when using a mobile device or the navigation may change to
+        more mobile friendly layout and things like that. 
+		<strong>Just compare the navigation of this page between full-sized browser window and small window. </strong>
+        Those kind of things are set with media queries. Luckily with Foundation5 many of these basic layout changes works good right out of the box
+        but it is important to get to know media queries so adjustments can be made to the site when needed.		
+		</p>
+		
+		<p>
+		<strong> Take a look at the code example below. </strong> Foundation does not seem to change font size by default when screen size changes so I added this little code to the foundation.css
+        file. At first the media type is set to @media screen and then there is the max-width value inside the brackets.
+		The query below will apply only to a device that has a screen and only if the width of the browser window is 340 pixels at maximum. Otherwise that particular query will be ignored.
+		<strong>Try to change the browser window size to less than 400px to see when the media query below kicks in. </strong>
+		There are many more media types that you can define such as handheld, print, etc. You can also take a look at the wedding store example on this tutorial site
+		to see media queries in action.
+		</p>
+		
+     <p> @media only screen and (max-width: 400px) {  <br />
+       p { font-size: 0.8em; } <br />
+        }
+	</p>	
+		
+     <strong> As an media query exercise, copy the code above and put it in the foundation.css file.  </strong>
+	<p> After that you can experiment with the font-size and max-width properties and then resize the browser windows to see the changes. 
+	 You can also try to add different media queries. For example you could try to add a font size for a handheld device at some particular width-property. 
+	 Remember that you can use max-width and min-width properties. </p>	  
+     
+	
+     </article>
+	  
+	  <div>
+	  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media queries</a>  <br />
+	  <a href="http://www.techrepublic.com/blog/web-designer/how-to-create-media-queries-in-responsive-web-design/">How to create media queries in Responsive Web Design</a> <br />
+	  <a href=" http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries">Responsive Design with CSS3 Media Queries</a> 
+	 
+      </div>
+      
+	  <hr />
+ 
+    </div>
+ 
+    <!-- End Main Content -->
+ 
+ 
+  </div>
+ 
+  <!-- End Main Content and Sidebar -->
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Jari-Matti Seppälä</p>
+        </div>
+        <div class="large-6 columns">
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    $(document).foundation();
+  </script>
+    
+  </body>
+</html>

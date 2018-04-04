@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web design tutorial </title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+  </head>
+  <body>
+  
+  
+<!-- Nav Bar -->
+  
+<nav class="top-bar" data-topbar data-options="is_hover: false"> 
+<ul class="title-area"> 
+<li class="name"> <h1><a href="index.html">RWD tutorial</a></h1> </li> <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --> 
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> 
+</ul> 
+<section class="top-bar-section"> 
+
+<!-- Right Nav Section --> 
+
+
+<ul class="right"> <li class="active"><li> <a href="index.html">Main</a> 
+<ul> 
+</ul> 
+</li> 
+
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">Get started</a> 
+<ul class="dropdown"> 
+<li><a href="http://foundation.zurb.com/">Download Foundation</a></li> 
+<li><a href="instructions.html">Instructions</a></li> 
+<li><a href="http://foundation.zurb.com/docs/">Foundation Documents</a></li>
+<li><a href="http://foundation.zurb.com/templates.html">Foundation Templates</a></li>  
+</ul> 
+
+<li class="has-dropdown"> <a href="http://foundation.zurb.com/">RWD basics</a> 
+<ul class="dropdown"> 
+<li><a href="what_is_rwd.html">What is RWD?</a></li> 
+<li><a href="html5.html">HTML5</a></li> 
+<li><a href="css3.html">CSS3</a></li> 
+<li><a href="javascript.html">JavaScript</a></li> 
+<li><a href="media_query.html">Media query</a></li>
+<li><a href="fonts_and_images.html">Relative fonts and responsive images</a></li>
+<li><a href="visibility.html">Visibility</a></li>  
+<li><a href="grid">Grid</a></li>
+<li><a href="framework.html">Framework</a></li>
+</ul> 
+
+</ul> 
+
+</nav>
+  
+<!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row">
+ 
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+ 
+      <article>
+ 
+       <h3><a href="#">Relative font sizes</a></h3>
+	   <p> Relative font sizes can be used for font responsiveness when designing responsive sites so that the font-size may vary
+	   according to screen size or browser window size. You can see an example of this at the media query site or the wedding store
+	   example. You can read more information about relative font sizes <a href="https://frontify.com/blog/relative-font-sizes-for-web-designers/">here.</a>  <br />
+	   </p>
+	
+     </article>
+	 
+	    <article>
+ 
+       <h3><a href="#">Responsive images</a></h3>
+	   <p> The same responsiveness can be applied to images so that the image size depending on which device is used of how big the browser window is.
+	    The little code that does the trick is this one below: </p> 
+		<p>img { </p>
+        <p> max-width: 100%; </p>
+        <p> } </p>  
+	   </p>
+	   
+	   <p>
+	    That works in most cases. That code is actually included in Foundation package so the image scaling works immediately.
+	<strong> Just resize the home page of this tutorial site to see the scaling. </strong> 
+	<p> There are couple of things however that need to be considered then thinking about image scaling in responsive websites
+		and those things can be found <a href="http://www.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/">here.</a>  <br />
+	   </p>
+	
+     </article>
+	  
+	  <hr />
+ 
+    </div>
+ 
+    <!-- End Main Content -->
+ 
+ 
+  </div>
+ 
+  <!-- End Main Content and Sidebar -->
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Jari-Matti Seppälä</p>
+        </div>
+        <div class="large-6 columns">
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    $(document).foundation();
+  </script>
+    
+  </body>
+</html>
